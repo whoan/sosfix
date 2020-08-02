@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Random helpers for FIX-protocol",
   "main": "src/index.js",
+  "repository": "git@github.com:whoan/sosfix.git",
   "author": "Juan Eugenio Abadie <juaneabadie@gmail.com>",
   "license": "MIT",
   "devDependencies": {
