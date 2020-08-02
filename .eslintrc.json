@@ -1,0 +1,33 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "standard"
+    ],
+    "rules": {
+        "no-trailing-spaces": [
+            "error",
+            {
+                "ignoreComments": true
+            }
+        ],
+        "no-unused-vars": [
+            "warn",
+            {
+                "args": "after-used"
+            }
+        ],
+        "indent": [
+            "error",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "padded-blocks": 0
+    }
+}

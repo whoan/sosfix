@@ -1,0 +1,178 @@
+{
+  "Session": {
+    "Session": {
+      "0": "Heartbeat",
+      "1": "TestRequest",
+      "2": "ResendRequest",
+      "3": "Reject",
+      "4": "SequenceReset",
+      "5": "Logout",
+      "A": "Logon",
+      "n": "XML_non_FIX"
+    }
+  },
+  "PreTrade": {
+    "Indication": {
+      "6": "IOI",
+      "7": "Advertisement"
+    },
+    "EventCommunication": {
+      "B": "News",
+      "C": "Email"
+    },
+    "QuotationNegotiation": {
+      "R": "QuoteRequest",
+      "S": "Quote",
+      "Z": "QuoteCancel",
+      "a": "QuoteStatusRequest",
+      "b": "MassQuoteAcknowledgement",
+      "i": "MassQuote",
+      "AG": "QuoteRequestReject",
+      "AH": "RFQRequest",
+      "AI": "QuoteStatusReport",
+      "AJ": "QuoteResponse"
+    },
+    "MarketData": {
+      "V": "MarketDataRequest",
+      "W": "MarketDataSnapshotFullRefresh",
+      "X": "MarketDataIncrementalRefresh",
+      "Y": "MarketDataRequestReject",
+      "CC": "StreamAssignmentRequest",
+      "CD": "StreamAssignmentReport",
+      "CE": "StreamAssignmentReportACK"
+    },
+    "SecuritiesReferenceData": {
+      "c": "SecurityDefinitionRequest",
+      "d": "SecurityDefinition",
+      "e": "SecurityStatusRequest",
+      "f": "SecurityStatus",
+      "v": "SecurityTypeRequest",
+      "w": "SecurityTypes",
+      "x": "SecurityListRequest",
+      "y": "SecurityList",
+      "z": "DerivativeSecurityListRequest",
+      "AA": "DerivativeSecurityList",
+      "BP": "SecurityDefinitionUpdateReport",
+      "BK": "SecurityListUpdateReport",
+      "BR": "DerivativeSecurityListUpdateReport"
+    },
+    "MarketStructureReferenceData": {
+      "g": "TradingSessionStatusRequest",
+      "h": "TradingSessionStatus",
+      "BJ": "TradingSessionList",
+      "BI": "TradingSessionListRequest",
+      "BS": "TradingSessionListUpdateReport",
+      "BT": "MarketDefinitionRequest",
+      "BU": "MarketDefinition",
+      "BV": "MarketDefinitionUpdateReport"
+    },
+    "PartiesReferenceData": {
+      "CF": "PartyDetailsListRequest",
+      "CG": "PartyDetailsListReport"
+    }
+  },
+  "Trade": {
+    "SingleGeneralOrderHandling": {
+      "8": "ExecutionReport",
+      "9": "OrderCancelReject",
+      "D": "NewOrderSingle",
+      "F": "OrderCancelRequest",
+      "G": "OrderCancelReplaceRequest",
+      "H": "OrderStatusRequest",
+      "Q": "DontKnowTradeDK",
+      "BN": "ExecutionAcknowledgement"
+    },
+    "ProgramTrading": {
+      "E": "NewOrderList",
+      "K": "ListCancelRequest",
+      "L": "ListExecute",
+      "M": "ListStatusRequest",
+      "N": "ListStatus",
+      "k": "BidRequest",
+      "l": "BidResponse",
+      "m": "ListStrikePrice"
+    },
+    "OrderMassHandling": {
+      "q": "OrderMassCancelRequest",
+      "r": "OrderMassCancelReport",
+      "AF": "OrderMassStatusRequest",
+      "BZ": "OrderMassActionReport",
+      "CA": "OrderMassActionRequest"
+    },
+    "CrossOrders": {
+      "s": "NewOrderCross",
+      "t": "CrossOrderCancelReplaceRequest",
+      "u": "CrossOrderCancelRequest"
+    },
+    "MultilegOrders": {
+      "AB": "NewOrderMultileg",
+      "AC": "MultilegOrderCancelReplace"
+    }
+  },
+  "PostTrade": {
+    "Allocation": {
+      "J": "AllocationInstruction",
+      "P": "AllocationInstructionAck",
+      "AS": "AllocationReport",
+      "AT": "AllocationReportAck",
+      "BM": "AllocationInstructionAlert"
+    },
+    "SettlementInstruction": {
+      "T": "SettlementInstructions",
+      "AV": "SettlementInstructionRequest",
+      "BQ": "SettlementObligationReport"
+    },
+    "RegistrationInstruction": {
+      "o": "RegistrationInstructions",
+      "p": "RegistrationInstructionsResponse"
+    },
+    "TradeCapture": {
+      "AD": "TradeCaptureReportRequest",
+      "AE": "TradeCaptureReport",
+      "AQ": "TradeCaptureReportRequestAck",
+      "AR": "TradeCaptureReportAck"
+    },
+    "Confirmation": {
+      "AK": "Confirmation",
+      "AU": "Confirmation_Ack",
+      "BH": "ConfirmationRequest"
+    },
+    "PositionMaintenance": {
+      "AL": "PositionMaintenanceRequest",
+      "AM": "PositionMaintenanceReport",
+      "AN": "RequestForPositions",
+      "AO": "RequestForPositionsAck",
+      "AP": "PositionReport",
+      "AW": "AssignmentReport",
+      "BO": "ContraryIntentionReport",
+      "BL": "AdjustedPositionReport"
+    },
+    "CollateralManagement": {
+      "AX": "CollateralRequest",
+      "AY": "CollateralAssignment",
+      "AZ": "CollateralResponse",
+      "BA": "CollateralReport",
+      "BB": "CollateralInquiry",
+      "BG": "CollateralInquiryAck"
+    },
+    "Infrastructure": {
+      "BusinessReject": {
+        "j": "BusinessMessageReject"
+      },
+      "Network": {
+        "BC": "NetworkCounterpartySystemStatusRequest",
+        "BD": "NetworkCounterpartySystemStatusResponse"
+      },
+      "UserManagement": {
+        "BE": "UserRequest",
+        "BF": "UserResponse",
+        "CB": "UserNotification"
+      },
+      "Application": {
+        "BW": "ApplicationMessageRequest",
+        "BX": "ApplicationMessageRequestAck",
+        "BY": "ApplicationMessageReport"
+      }
+    }
+  }
+}
