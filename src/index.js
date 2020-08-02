@@ -1,6 +1,6 @@
 const messagesByCategory = require('./messages-by-category.json')
 
-const messagesByType = Object.keys(messagesByCategory).reduce((outputByMessage, category) => {
+const messagesByType = Object.keys(messagesByCategory).reduce((outputByType, category) => {
   return {
     ...Object.keys(messagesByCategory[category]).reduce((outputByCategory, subCategory) => {
       return {
@@ -17,7 +17,7 @@ const messagesByType = Object.keys(messagesByCategory).reduce((outputByMessage, 
         ...outputByCategory
       }
     }, {}),
-    ...outputByMessage
+    ...outputByType
   }
 }, {})
 
