@@ -4,13 +4,26 @@ const messagesByType = Object.keys(messagesByCategory).reduce((outputByType, cat
   return {
     ...Object.keys(messagesByCategory[category]).reduce((outputByCategory, subCategory) => {
       return {
-        ...Object.keys(messagesByCategory[category][subCategory]).reduce((outputBySubcategory, messageType) => {
-          return {
-            [messageType]: {
-              name: messagesByCategory[category][subCategory][messageType],
+        ...Object.keys(messagesByCategory[category][subCategory]).reduce((outputBySubcategory, msgTypeOrSubSUbCategory) => {
+          const name = messagesByCategory[category][subCategory][msgTypeOrSubSUbCategory]
+          if (typeof name === 'string' || name instanceof String) {
+            outputBySubcategory[msgTypeOrSubSUbCategory] = {
+              name,
               category,
               subCategory
-            },
+            }
+            return outputBySubcategory
+          }
+          return {
+            ...Object.keys(name).reduce((outputBySubSubcategory, msgType) => {
+              outputBySubSubcategory[msgType] = {
+                name: name[msgType],
+                category,
+                subCategory,
+                subSubCategory: msgTypeOrSubSUbCategory
+              }
+              return outputBySubSubcategory
+            }, {}),
             ...outputBySubcategory
           }
         }, {}),
