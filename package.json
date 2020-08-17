@@ -1,6 +1,6 @@
 {
   "name": "sosfix",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Random helpers for FIX-protocol",
   "main": "src/index.js",
   "repository": "git@github.com:whoan/sosfix.git",
