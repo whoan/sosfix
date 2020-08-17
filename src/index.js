@@ -99,11 +99,17 @@ class Fix {
     return message && message.category === 'Session'
   }
 
+  isInfrastructure (msgType) {
+    const message = this.messagesByType[msgType]
+    return message && message.category === 'Infrastructure'
+  }
+
   isAppRequest (msgType) {
     if (!this.isStandardMessage(msgType)) {
       return undefined
     }
     return !this.isAdministrative(msgType) &&
+      !this.isInfrastructure(msgType) &&
       !!(this.messagesByType[msgType].name.endsWith('Request') || institutionSideMessages[msgType] || bothSidesMessages[msgType])
   }
 
@@ -111,7 +117,9 @@ class Fix {
     if (!this.isStandardMessage(msgType)) {
       return undefined
     }
-    return !this.isAdministrative(msgType) && (bothSidesMessages[msgType] || !this.isAppRequest(msgType))
+    return !this.isAdministrative(msgType) &&
+      !this.isInfrastructure(msgType) &&
+      (bothSidesMessages[msgType] || !this.isAppRequest(msgType))
   }
 
   isStandardMessage (msgType) {

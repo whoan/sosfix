@@ -154,25 +154,25 @@
       "BA": "CollateralReport",
       "BB": "CollateralInquiry",
       "BG": "CollateralInquiryAck"
+    }
+  },
+  "Infrastructure": {
+    "BusinessReject": {
+      "j": "BusinessMessageReject"
     },
-    "Infrastructure": {
-      "BusinessReject": {
-        "j": "BusinessMessageReject"
-      },
-      "Network": {
-        "BC": "NetworkCounterpartySystemStatusRequest",
-        "BD": "NetworkCounterpartySystemStatusResponse"
-      },
-      "UserManagement": {
-        "BE": "UserRequest",
-        "BF": "UserResponse",
-        "CB": "UserNotification"
-      },
-      "Application": {
-        "BW": "ApplicationMessageRequest",
-        "BX": "ApplicationMessageRequestAck",
-        "BY": "ApplicationMessageReport"
-      }
+    "Network": {
+      "BC": "NetworkCounterpartySystemStatusRequest",
+      "BD": "NetworkCounterpartySystemStatusResponse"
+    },
+    "UserManagement": {
+      "BE": "UserRequest",
+      "BF": "UserResponse",
+      "CB": "UserNotification"
+    },
+    "Application": {
+      "BW": "ApplicationMessageRequest",
+      "BX": "ApplicationMessageRequestAck",
+      "BY": "ApplicationMessageReport"
     }
   }
 }
